@@ -1,0 +1,354 @@
+/* Resetowanie styli */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #373737;
+}
+
+body {
+  font-family: "Catamaran", sans-serif;
+  color: black;
+  overflow: auto;
+}
+img {
+  width: 100%;
+}
+/* typografia */
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  line-height: 0.8;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 65px;
+}
+
+h2 {
+  font-size: 75px;
+}
+
+h3 {
+  font-size: 24px;
+}
+h2,
+h3 {
+  font-weight: 100;
+}
+
+p {
+  font-size: 22px;
+}
+
+li {
+  list-style: none;
+}
+
+/* stylowanie sekcji */
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#interest {
+  background-color: cadetblue;
+  color: #ffffff;
+}
+
+#quote {
+  background-color: cadetblue;
+  color: #ffffff;
+}
+
+section {
+  padding: 60px 20px; /* góry i dołu lewa i prawa */
+}
+
+/* stylowanie headera */
+
+header {
+  padding: 100px 20px;
+  background-image: url("../images/IMG_0670.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120vh;
+  color: black;
+}
+
+/* stylowanie logo */
+.logo {
+  width: 30px;
+  height: 30px;
+}
+
+.logo path {
+  stroke: #ffffff;
+}
+.first-part-logo {
+  color: black;
+  font-size: 30px;
+}
+.last-part-logo {
+  color: black;
+  font-size: 30px;
+}
+
+/* stylowanie munu mobilnego */
+.burger-menu,
+.close-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.close-menu svg {
+  fill: #ffffff;
+}
+
+.open{
+  display: block;
+}
+
+
+/* stylowanie nawigacji */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.nav-menu {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+/* stylowanie tekstu */
+.header-text {
+  max-width: 200px;
+}
+
+.header-text p {
+  margin-bottom: 40px;
+  font-weight: 300;
+  font-style: italic;
+}
+.header-text a {
+  padding: 5px 10px;
+  border: 2px solid darkgray;
+}
+.header-text a:hover {
+  background-color: darkturquoise;
+  font-weight: 500;
+}
+
+/* stylowanie sekcji about */
+.about-wraper {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.about-column-left,
+.about-column-right {
+  max-width: 45%;
+}
+
+.about-column-right h2 {
+  color: rgb(6, 92, 121);
+  margin-bottom: 20px;
+}
+
+.about-introduction {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.about-introduction::first-letter {
+  color: black;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+/* stylowanie sekcji zainteresowania */
+#interest ul {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+#interest li {
+  width: 200px;
+}
+#interest h3 {
+  margin-bottom: 15px;
+}
+/* stylowanie sekcji zainteresowania-ikony */
+#interest svg {
+  width: 50px;
+  height: 50px;
+  transform: translateY(25%);
+}
+#interest ul div {
+  width: 75px;
+  height: 75px;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+}
+
+//* stylowanie sekcji zdjęcia */
+#photos {
+  text-align: center;
+}
+
+#photos h2 {
+  text-align: center;
+  color: dimgrey;
+  margin-bottom: 20px;
+}
+
+#photos p {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+.photos-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+.photos-gallery figure {
+  max-width: 30%;
+  min-width: 250px;
+}
+.photos-gallery figcaption {
+  font-size: 12px;
+}
+/* stylowanie sekcji kontakt */
+
+#contact h2 {
+  text-align: center;
+  color: #888686;
+  margin-bottom: 50px;
+}
+#contact form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  max-width: 500px;
+}
+#contact label {
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact-input {
+  margin-bottom: 16px;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #6393af;
+}
+
+#contact form button {
+  margin: 0 auto;
+  width: 100px;
+  padding: 10px;
+  background-color: #81c6e6;
+  color: #ffffff;
+  border-radius: 10px;
+  border: 2px solid #73bef0;
+  text-transform: capitalize;
+}
+#contact form button:hover {
+  background-color: #ffffff;
+  color: #373737;
+}
+/* 
+Selektory:
+nazwą tagu(znacznika htmla): h1, header, body
+id: #about
+class: .about-column-right
+*/
+
+.footer {
+  background-color: dimgray;
+  color: #62a2d6;
+  padding: flex;
+}
+/* Stylowanie footera */
+.footer {
+  background-color: #4aa7c4;
+  color: #ffffff;
+  padding: 40px 20px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.footer-icon-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+.footer-icon-container a {
+  height: 40px;
+}
+.footer-text-container {
+  min-width: 200px;
+}
+
+.footer-text-container p {
+  margin-bottom: 16px;
+}
+
+.footer-text-container p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Dostosowanie stylowania do mobile */
+@media screen and (max-width: 768px) {
+  h1{
+    font-size: 40px;
+  }
+  .nav-menu {
+    display: none;
+    width: auto;
+  }
+.menu-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+  .nav-menu li {
+    text-align: right;
+    margin-bottom: 10px;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .open {
+    display: block;
+  }
+  .hidden {
+    display: none;
+  }
+}
