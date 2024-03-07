@@ -160,6 +160,7 @@ nav {
 }
 .about-column-left,
 .about-column-right {
+  min-width: 250px;
   max-width: 45%;
 }
 
@@ -187,7 +188,8 @@ nav {
   text-align: center;
 }
 #interest li {
-  width: 200px;
+  min-width: 250px;
+  width: 20%;
 }
 #interest h3 {
   margin-bottom: 15px;
@@ -235,6 +237,11 @@ nav {
 .photos-gallery figcaption {
   font-size: 12px;
 }
+.photos-gallery img {  
+  height: 400px;
+
+}
+
 /* stylowanie sekcji kontakt */
 
 #contact h2 {
@@ -351,4 +358,9 @@ class: .about-column-right
   .hidden {
     display: none;
   }
+  .about-column-left,
+.about-column-right {
+
+  max-width: 100%;
+}
 }
